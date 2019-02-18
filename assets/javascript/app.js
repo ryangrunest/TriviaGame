@@ -79,11 +79,11 @@ function main() {
 		
 		// add one to count
 		questionCount++;
-		if (questionCount < 1) {
+		if (questionCount < 5) {
 			$('.question').html(questions[questionCount].question);
 			$('.answers').html(questions[questionCount].answers);
 			$('.timer').html('Time Left: 10');
-		} else if (questionCount >= 1) {
+		} else if (questionCount >= 5) {
 			loadFinalPage();
 		};
 	};
@@ -159,7 +159,7 @@ function main() {
 	];
 
 	//push start page html to container on load
-	$('.jumbotron').html('<h1>Steve Jobs Trivia!</h1><h3 class="mt-5">Test your knowledge on the intricacies of Steve Jobs! <br> You have 15 seconds per question <br>At the end you will find out your score!</h3><button type="button" class="btn btn-info mt-5 btn-lg startButton">Click Here To Start!</button>');
+	$('.jumbotron').html('<h1>Steve Jobs Trivia!</h1><h3 class="mt-5">Test your knowledge on the intricacies of Steve Jobs! <br> You have 10 seconds per question <br>At the end you will find out your score!</h3><button type="button" class="btn btn-info mt-5 btn-lg startButton">Click Here To Start!</button>');
 	// create click listener for answers
 		$('.jumbotron').on('click', $('h3'), function(h3) {
 
