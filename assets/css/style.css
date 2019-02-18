@@ -27,7 +27,11 @@ body {
 	padding: 25px;
 }
 .answers h3:hover {
-	color: #c6b410;
+	color: #c6b410;	
+	cursor: grab;
+}
+.answers h3:active {
+	cursor: grabbing;
 }
 .answers {
 	text-align: center;
