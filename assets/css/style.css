@@ -12,3 +12,23 @@ body {
 	color: white;
 	border-radius: 25px;
 }
+.form-container {
+	margin-top: 3%;
+	margin-left: 48%;
+}
+.answers h3 {
+	background-color: #04677a;
+	color: white;
+	border-radius: 15px;
+	border: 1px solid green;
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 2%;
+	padding: 25px;
+}
+.answers h3:hover {
+	color: #c6b410;
+}
+.answers {
+	text-align: center;
+}
