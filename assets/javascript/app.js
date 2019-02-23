@@ -1,4 +1,6 @@
-// init counter for correctly and incorrectly answered quiz questions
+
+function main() {
+	// init counter for correctly and incorrectly answered quiz questions
 	var correctCount = 0;
 	var incorrectCount = 0;
 	// counter for questions
@@ -10,12 +12,12 @@
 	var clockRunning = false;
 	var time = 10;
 	var ranOutOfTime = 0;
-function main() {
-	
+	clearInterval(intervalID);
 
 
 	// load first question
 	function loadFirstQuestion() {
+		questionCount = 0;
 		// clear jumbotron html
 		$('.jumbotron').html('');
 		// add question and answers divs to jumbotron
@@ -161,7 +163,7 @@ function main() {
 	//push start page html to container on load
 	$('.jumbotron').html('<h1>Steve Jobs Trivia!</h1><h3 class="mt-5">Test your knowledge on the intricacies of Steve Jobs! <br> You have 10 seconds per question <br>At the end you will find out your score!</h3><button type="button" class="btn btn-info mt-5 btn-lg startButton">Click Here To Start!</button>');
 	// create click listener for answers
-		$('.jumbotron').on('click', $('h3'), function(h3) {
+		$('.jumbotron').on('click', function(h3) {
 
 			// alert(event.target.id);
 			// checking that start button was clicked
@@ -182,7 +184,7 @@ function main() {
 					correctCount++;
 					stopTimer();
 					$('.timer').html('');
-					setTimeout(loadHTML, 3000);
+					setTimeout(loadHTML, 500);
 
 					// if incorrect guess
 				} else if (event.target.id != questions[questionCount].value) {
@@ -192,10 +194,12 @@ function main() {
 					incorrectCount++;
 					stopTimer();
 					$('.timer').html('');
-					setTimeout(loadHTML, 3000);
+					setTimeout(loadHTML, 500);
 				}; 		
 			};
 		});	
+
+		// init();
 };
 
 main();
