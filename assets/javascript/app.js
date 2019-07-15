@@ -130,13 +130,13 @@ function main() {
 		},
 		{
 			// questions html
-			question: '<h1>What Does Jobs Describe As "One of the two or three most important things I have done in my life"?</h1>',
+			question: '<h1>In What Year Did Jobs Hold a Spot on Fortunes list of Americas Toughest Bosses?</h1>',
 			// html
-			answers: '<h3 id="1">Have Children</h3><h3 id="2">Travel To India</h3><h3 id="3">LSD</h3><h3 id="4">Work For An Apple Orchard</h3>',
+			answers: '<h3 id="1">1992</h3><h3 id="2">2014</h3><h3 id="3">1993</h3><h3 id="4">1985</h3>',
 			// correct answer value
 			value: 3,
 			// correct answer string
-			correctAnswer: 'LSD'
+			correctAnswer: '1993'
 		},
 		{
 			// questions html
